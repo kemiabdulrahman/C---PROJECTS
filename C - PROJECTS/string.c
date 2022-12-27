@@ -246,7 +246,7 @@ printf("Reverse of the string : %s\n",string);
 
 
 
-
+/*
 void main()
 {
 char string[300];
@@ -266,16 +266,107 @@ for (i= 0; i < n/2; i++) {
 
 printf("Reverse of the string : %s\n",string);
 }
+*/
 
 
+/*
+void main()
+{
+char string[300];
+int i, n, t;
+printf("Enter the string check if palindrome : \n");
+gets(string);
+for (n = 0; string[n] != '\0'; n++) {
+
+}
+for (i= 0; i < n/2; i++) {
+if (string[i] != string[n-1-i]) {
+break;
+
+}
+}
+if (i>= n/2) {
+	printf("String is a Palindrome\n");
+
+}
+else {
+printf("String is not a palindrome\n");
+}
 
 
+printf("%s\n", string);
+}
+*/
 
 
+/*
+void main()
+{
+char string[300];
+int i, n, t, c[123] = {0};
+printf("Enter the string to check for each character count : \n");
+gets(string);
+
+for (i = 0; string[i] != '\0'; i++) {
+	c[string[i]]++;
+
+}
+
+for (i = 0; i < 123; i++) {
+	if (c[i] > 0) {
+		printf("%c --> %d Times\n", i, c[i]);
+	}
 
 
+}
+}
+*/
+
+/*
+void main()
+{
+char string[300];
+int i, n, t, c[123] = {0};
+printf("Enter the string to check for each character count : \n");
+gets(string);
+
+for (i = 0; string[i] != '\0'; i++) {
+	c[string[i]]++;
+
+}
+
+for (i = 0; i < 123; i++) {
+	if (c[i] > 1) {
+		printf("%c --> %d Times\n", i, c[i]);
+	}
 
 
+}
+}
+
+*/
+
+
+void main()
+{
+char string[300];
+int i, n, t, c[26] = {0};
+printf("Enter the string to check for each character count : \n");
+gets(string);
+
+for (i = 0; string[i] != '\0'; i++) {
+	c[string[i] - 'a']++;
+
+}
+
+for (i = 0; i < 26; i++) {
+	if (c[i] > 0) {
+		printf("%c --> %d Times\n", i+'a', c[i]);
+	}
+
+
+}
+}
 
 
 
